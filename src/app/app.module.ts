@@ -20,6 +20,7 @@ import {ImageUploadModule} from "./image-upload/image-upload.module";
 
 // Define the routes
 const ROUTES = [
+  { path: '', redirectTo: '/about', pathMatch: 'full' },
   { path: 'about',  component: AboutComponent },
   { path: 'images', component: ImagesComponent },
   { path: 'opening-hours',     component: OpeningHoursComponent },
