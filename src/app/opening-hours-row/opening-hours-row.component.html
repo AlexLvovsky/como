@@ -1,0 +1,16 @@
+<div>
+  <select [(ngModel)]="startDay">
+    <option *ngFor="let day of days" [ngValue]="day">{{day}}</option>
+  </select>
+  <select [(ngModel)]="endDay">
+    <option *ngFor="let day of days" [ngValue]="day">{{day}}</option>
+  </select>
+  <select [(ngModel)]="startTime">
+    <option *ngFor="let hour of hours" [ngValue]="hour">{{hour}}</option>
+  </select>
+  <select [(ngModel)]="endTime">
+    <option *ngFor="let hour of hours" [ngValue]="hour">{{hour}}</option>
+  </select>
+
+  <button class="add-button" (click)="clicked()" title="Add"></button>
+</div>

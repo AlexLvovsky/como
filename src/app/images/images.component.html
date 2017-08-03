@@ -1,0 +1,13 @@
+<div>
+  <div class="container">
+    <label>Pixabay Token </label>
+    <input [(ngModel)]="pixabayToken"/>
+    <button (click)="getImages()"><span>Get Images </span></button>
+    <div class="error">{{error}}</div>
+  </div>
+  <app-preview>
+    <div  *ngFor="let imageResult of imageResults" >
+    <img src='{{imageResult.previewURL}}'/>
+  </div>
+  </app-preview>
+</div>

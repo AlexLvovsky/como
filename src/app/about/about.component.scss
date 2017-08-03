@@ -1,0 +1,26 @@
+.container {
+  margin-top: 10px;
+  width: 50%;
+  height: 500px;
+  border: 1px solid #9AA6B0;
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: top;
+
+   textarea,  input{
+    display: block;
+    width: 100%;
+  }
+
+  .description{
+    height: 300px;
+  }
+}
+
+.phone-title, .phone-description, .phone-url{
+  word-wrap: break-word;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+

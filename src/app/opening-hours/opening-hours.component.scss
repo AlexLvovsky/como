@@ -1,0 +1,59 @@
+.container{
+  overflow: auto;
+  margin-top: 10px;
+  width: 50%;
+  height: 500px;
+  border: 1px solid #9AA6B0;
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: top;
+
+  div{
+    margin-top: 10px;
+  }
+}
+.remove-button{
+  width: 25px;
+  height: 25px;
+  border: 0;
+  background-size: 100%;
+  background-size: 25px auto;
+  vertical-align: bottom;
+  cursor: pointer;
+  border-radius: 50%;
+  background: red;
+  position: relative;
+
+  &:focus{
+    outline: none;
+  }
+
+  &:after{
+    content: "x";
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    left: 6px;
+    font-size: 20px;
+    font-weight: 900;
+  }
+}
+//button{
+//  background:url(../../images/Remove.png) no-repeat;
+//  width:25px;
+//  height:25px;
+//  border: 0;
+//  background-size: 100%; /* To fill the dimensions of container (button), or */
+//  background-size: 25px auto; /* to specify dimensions explicitly */
+//  vertical-align: bottom;
+//  cursor: pointer;
+//
+//  &:focus{
+//    outline: none;
+//  }
+//}
+
+.opening-list{
+  padding: 0;
+  text-align: center;
+}

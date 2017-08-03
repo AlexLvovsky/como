@@ -1,0 +1,15 @@
+<div>
+  <div class="container">
+    <label>Business Name </label>
+    <input placeholder="Name" [(ngModel)]="aboutObj.name"/>
+    <label>Description </label>
+    <textarea class="description" [(ngModel)]="aboutObj.description"></textarea>
+    <label>Website URL </label>
+    <input placeholder="Url" class="website" [(ngModel)]="aboutObj.url"/>
+  </div>
+  <app-preview>
+    <h3 class="phone-title">{{aboutObj.name}}</h3>
+    <div class="phone-description">{{aboutObj.description}}</div>
+    <div *ngIf="aboutObj.url">Join us on:</div>
+    <a class="phone-url" href="{{aboutObj.url}}">{{aboutObj.url}}</a></app-preview>
+</div>

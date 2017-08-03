@@ -1,0 +1,20 @@
+<div>
+  <div #listContaner class="container">
+    <app-opening-hours-row (onClick)="addOpeningHour($event)"></app-opening-hours-row>
+    <ul class="todo-list">
+      <li *ngFor="let openingHour of listOpeningHours">
+        <div class="view">
+          {{openingHour.startDay}}-{{openingHour.endDay}} {{openingHour.startTime}}-{{openingHour.endTime}}
+          <button class="remove-button" (click)="removeOpeningHour(openingHour)" title="Remove"></button>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <app-preview>
+    <ul class="opening-list">
+      <div *ngFor="let openingHour of listOpeningHours">
+        {{openingHour.startDay}}-{{openingHour.endDay}} {{openingHour.startTime}}-{{openingHour.endTime}}
+      </div>
+    </ul>
+  </app-preview>
+</div>

@@ -1,0 +1,50 @@
+/*.nav-item{*/
+  /*display: -webkit-box;*/
+  /*width: 100px;*/
+  /*height: 100px;*/
+  /*!*text-align: center;*!*/
+  /*!*vertical-align: middle;*!*/
+  /*!*line-height: 100px;*!*/
+  /*position: relative;*/
+  /*top: 50%;*/
+  /*transform: translateY(-50%);*/
+/*}*/
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 4px;
+}
+nav a:visited, a:link {
+  color: #607D8B;
+}
+nav a:hover {
+  color: #039be5;
+  background-color: #CFD8DC;
+}
+nav a.active {
+  color: #039be5;
+}
+
+/*app-root about {*/
+  /*display: inline-block !important;*/
+  /*width: 600px;*/
+  /*display: inline-block;*/
+  /*vertical-align: top;*/
+/*}*/
+
+.container {
+  margin-top: 10px;
+  width: 50%;
+  height: 500px;
+  border: 1px solid #9AA6B0;
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: top;
+}
+
+.phone h3{
+  text-align: center;
+}
