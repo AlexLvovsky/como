@@ -5,6 +5,7 @@
       [extensions]="['jpg','png', 'jpeg']"
       (onFileUploadFinish)="imageFinishedUploading($event)">
     </image-upload>
+    <div class="error">{{errorMessage}}</div>
   </div>
 
   <app-preview>

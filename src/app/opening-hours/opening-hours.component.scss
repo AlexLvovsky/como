@@ -16,7 +16,6 @@
   width: 25px;
   height: 25px;
   border: 0;
-  background-size: 100%;
   background-size: 25px auto;
   vertical-align: bottom;
   cursor: pointer;
@@ -38,20 +37,6 @@
     font-weight: 900;
   }
 }
-//button{
-//  background:url(../../images/Remove.png) no-repeat;
-//  width:25px;
-//  height:25px;
-//  border: 0;
-//  background-size: 100%; /* To fill the dimensions of container (button), or */
-//  background-size: 25px auto; /* to specify dimensions explicitly */
-//  vertical-align: bottom;
-//  cursor: pointer;
-//
-//  &:focus{
-//    outline: none;
-//  }
-//}
 
 .opening-list{
   padding: 0;

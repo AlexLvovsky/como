@@ -7,7 +7,7 @@ export type InternalStateType = {
 @Injectable()
 export class AppState {
     _state: InternalStateType = {};
-  
+
     constructor() {
 
     }

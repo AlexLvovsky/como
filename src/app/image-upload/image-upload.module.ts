@@ -19,6 +19,6 @@ export class ImageUploadModule {
   static forRoot(): ModuleWithProviders {
     return {
       ngModule: ImageUploadModule
-    }
+    };
   }
 }

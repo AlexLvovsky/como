@@ -6,12 +6,14 @@
   display: inline-block;
   margin-left: 10px;
   vertical-align: top;
+
+   textarea,  input{
+    display: block;
+    width: 100%;
+  }
 }
 
-.container textarea, .container input{
-  display: block;
-  width: 100%;
-}
+
 
 
 button {
@@ -28,36 +30,37 @@ button {
   float: right;
   padding-bottom: 15px;
   padding-top: 15px;
+
+  &:focus{
+    outline: none;
+  }
+
+  span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+
+    &:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+  }
+
+  &:hover span {
+    padding-right: 25px;
+
+    &:after {
+      opacity: 1;
+      right: 0;
+    }
+  }
 }
 
-button:focus{
-  outline: none;
-}
-
-button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-button:hover span {
-  padding-right: 25px;
-}
-
-button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
 
 img {
   margin-left: auto;
