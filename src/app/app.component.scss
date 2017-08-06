@@ -6,18 +6,22 @@ nav{
     display: inline-block;
     background-color: #eee;
     border-radius: 4px;
+    text-decoration: none;
 
     &:visited, &:link{
       color: #607D8B;
+      text-decoration: none;
     }
 
     &:hover{
       color: #039be5;
       background-color: #CFD8DC;
+      text-decoration: none;
     }
 
     &.active{
       color: #039be5;
+      text-decoration: none;
     }
   }
 }
